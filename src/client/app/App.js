@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-import UrlShortener from './components/UrlShortener';
+import UrlShortenerContainer from './components/UrlShortenerContainer.js';
 
-render(<UrlShortener />, document.getElementById('root'));
+render(<UrlShortenerContainer />, document.getElementById('root'));
