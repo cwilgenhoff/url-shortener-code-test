@@ -7,7 +7,7 @@ const router = Express.Router();
 router.route('/urls').get(UrlController.getUrls);
 
 // Resolve Short URL
-router.route('/resolve/:id').get(UrlController.resolve);
+router.route('/url/:id').get(UrlController.resolve);
 
 // Shorten URL
 router.route('/shorten').post(UrlController.shorten);
