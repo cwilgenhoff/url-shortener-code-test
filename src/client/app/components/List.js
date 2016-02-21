@@ -7,7 +7,9 @@ class List extends Component {
         <ul>
           {
             this.props.urls.map(url =>
-              <li> <a href={ "/api/url/" + url.id }>{url.url}</a> </li>
+              <li key={url.id} >
+                <a href={ "/api/url/" + url.id }>{ '----(' + url.id + ')---> ' + url.url}</a>
+              </li>
             )
           }
         </ul>

@@ -14,8 +14,9 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-weight: 200;
-  color: #3b414c;
+  color: #76bd1d;
   font-size: 20px;
 }
 
@@ -28,4 +29,52 @@ ul {
 .app {
   white-space: nowrap;
   height: 100%;
+}
+
+.generator {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.generator__url {
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.generator__submit {
+  height: 40px;
+  vertical-align: top;
+  margin-left: 3px;
+  width: 20%;
+  background-color: #76bd1d;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: hand;
+}
+
+.generator__submit:hover {
+  background-color: #fff;
+  color: #76bd1d;
+}
+
+.shortened-urls {
+  width: 40%;
+  margin: 40px auto 0;
+  border: 1px solid #929292;
+  background: #fff;
+  min-height: 200px;
+  border-radius: 1px;
+}
+
+.shortened-urls li {
+  padding: 5px 15px;
+}
+
+.shortened-urls li a {
+  text-decoration: none;
+  color: #333333;
 }
