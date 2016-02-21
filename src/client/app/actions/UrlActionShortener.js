@@ -9,6 +9,14 @@ let UrlActionShortener = {
       success: constants.FETCH_URLS_SUCCESS,
       failure: constants.FETCH_URLS_ERROR
     });
+  },
+
+  shortenUrl(url) {
+    AppDispatcher.dispatchAsync(UrlShortenerAPI.shortenUrl(url), {
+      request: constants.SHORTEN_URL,
+      success: constants.SHORTEN_URL_SUCCESS,
+      failure: constants.SHORTEN_URL_ERROR
+    }, {url});
   }
 };
 
