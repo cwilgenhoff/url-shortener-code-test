@@ -32,6 +32,6 @@
     "whatwg-fetch": "^0.11.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": "4.2.x"
   }
 }
